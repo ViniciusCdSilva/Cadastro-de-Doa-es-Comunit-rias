@@ -1,0 +1,12 @@
+CREATE DATABASE comunidade;
+
+USE comunidade;
+
+CREATE TABLE doacoes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    item VARCHAR(100) NOT NULL,
+    quantidade INT NOT NULL,
+    contato VARCHAR(100) NOT NULL,
+    data_doacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
